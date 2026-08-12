@@ -1,0 +1,14 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS / IDE
+.idea/
+.vscode/

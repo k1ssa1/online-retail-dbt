@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ONLINE_RETAIL_DB
+    schema: RETAIL
+
+    tables:
+      - name: invoices_raw_data

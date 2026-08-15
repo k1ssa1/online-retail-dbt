@@ -1,0 +1,36 @@
+are these fine to us :
+
+  version: 2
+
+  models:
+    - name: stg_online_retail
+
+      columns:
+
+        - name: INVOICENO
+          data_tests:
+            - not_null
+
+        - name: STOCKCODE
+          data_tests:
+            - not_null
+
+        - name: QUANTITY
+          data_tests:
+            - not_null
+
+        - name: INVOICEDATE
+          data_tests:
+            - not_null
+
+        - name: UNITPRICE
+          data_tests:
+            - not_null
+
+        - name: CUSTOMERID
+          data_tests:
+            - not_null
+
+        - name: COUNTRY
+          data_tests:
+            - not_null

@@ -3,7 +3,7 @@ are these fine to us :
   version: 2
 
   models:
-    - name: stg_online_retail
+    - name: dq_range_checks
 
       columns:
 

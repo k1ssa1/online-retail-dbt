@@ -8,29 +8,32 @@ are these fine to us :
       columns:
 
         - name: INVOICENO
-          data_tests:
-            - not_null
 
         - name: STOCKCODE
-          data_tests:
-            - not_null
 
         - name: QUANTITY
-          data_tests:
-            - not_null
 
         - name: INVOICEDATE
-          data_tests:
-            - not_null
 
         - name: UNITPRICE
-          data_tests:
-            - not_null
 
         - name: CUSTOMERID
-          data_tests:
-            - not_null
 
         - name: COUNTRY
-          data_tests:
-            - not_null
+
+    - name: dq_data_type_checks
+
+      columns:
+        - name: INVOICENO
+
+        - name: STOCKCODE
+
+        - name: QUANTITY
+
+        - name: INVOICEDATE
+
+        - name: UNITPRICE
+
+        - name: CUSTOMERID
+
+        - name: COUNTRY

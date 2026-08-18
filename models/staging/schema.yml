@@ -8,6 +8,8 @@ models:
         - name: invoice_id
 
         - name: stock_code
+          
+        - name: description
 
         - name: quantity
 

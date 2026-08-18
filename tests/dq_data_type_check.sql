@@ -6,7 +6,7 @@ WITH
     UNION ALL
     SELECT
       'STOCKCODE',
-      'INTEGER'
+      'VARCHAR'
     UNION ALL
     SELECT
       'DESCRIPTION',
@@ -14,7 +14,7 @@ WITH
     UNION ALL
     SELECT
       'QUANTITY',
-      'NUMBER'
+      'INTEGER'
     UNION ALL
     SELECT
       'INVOICEDATE',
@@ -22,7 +22,7 @@ WITH
     UNION ALL
     SELECT
       'UNITPRICE',
-      'NUMBER'
+      'NUMBER(10,2)'
     UNION ALL
     SELECT
       'CUSTOMERID',

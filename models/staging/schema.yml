@@ -1,39 +1,20 @@
-are these fine to us :
+version: 2
 
-  version: 2
+models:
 
-  models:
-    - name: dq_range_checks
-
-      columns:
-
-        - name: INVOICENO
-
-        - name: STOCKCODE
-
-        - name: QUANTITY
-
-        - name: INVOICEDATE
-
-        - name: UNITPRICE
-
-        - name: CUSTOMERID
-
-        - name: COUNTRY
-
-    - name: dq_data_type_checks
+    - name: stg_online_retail
 
       columns:
-        - name: INVOICENO
+        - name: invoice_id
 
-        - name: STOCKCODE
+        - name: stock_code
 
-        - name: QUANTITY
+        - name: quantity
 
-        - name: INVOICEDATE
+        - name: invoice_date
 
-        - name: UNITPRICE
+        - name: unit_price
 
-        - name: CUSTOMERID
+        - name: customer_id
 
-        - name: COUNTRY
+        - name: country

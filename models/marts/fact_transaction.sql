@@ -6,10 +6,10 @@ SELECT
     p.product_key,
     d.date_key,
     t.invoice_id,
+    t.is_cancelled,
     t.quantity,
     t.unit_price,
-    t.total_cost,
-    t.is_cancelled
+    t.total_cost
     FROM {{ref('int_online_retail')}} t
     INNER JOIN {{ ref('dim_customer') }} c ON c.customer_id = t.customer_id
     INNER JOIN {{ ref('dim_product') }} p ON p.stock_code = t.stock_code

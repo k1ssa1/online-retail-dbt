@@ -32,3 +32,22 @@ models:
         - name: i_month
 
         - name: i_day
+
+    - name: fact_transaction
+
+      columns:
+        - name: transaction_key
+
+        - name: customer_key
+
+        - name: product_key
+
+        - name: date_key
+
+        - name: invoice_id
+
+        - name: quantity
+
+        - name: unit_price
+
+        - name: total_cost

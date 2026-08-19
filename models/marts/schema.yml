@@ -1,0 +1,12 @@
+version: 2
+
+models:
+
+    - name: dim_customer
+
+      columns:
+        - name: customer_key
+
+        - name: customer_id
+
+        - name: country

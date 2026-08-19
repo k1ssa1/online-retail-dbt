@@ -6,6 +6,8 @@ This repository contains the dbt transformation layer of an educational data war
 
 The project is designed to demonstrate how raw transactional data can be transformed into an analytical data warehouse using Snowflake and dbt, following dimensional modeling principles.
 
+>  [Read the article](https://dev.to/kitchen_code/desining-and-building-an-online-retail-data-warehouse-with-dbt-and-snowflake-5de7) that covers the full implementation.
+
 ## Project Objective
 
 The objective of this project is to use a transactional dataset to design and implement a data warehouse for educational purposes.

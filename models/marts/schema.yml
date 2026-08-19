@@ -19,3 +19,16 @@ models:
         - name: stock_code
 
         - name: description
+
+    - name: dim_date
+
+      columns:
+        - name: date_key
+
+        - name: invoice_date
+
+        - name: i_year
+
+        - name: i_month
+
+        - name: i_day

@@ -72,6 +72,8 @@ models:
 
       - name: invoice_id
 
+      - name: is_cancelled
+
       - name: quantity
 
       - name: unit_price

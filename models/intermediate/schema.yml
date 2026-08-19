@@ -22,3 +22,5 @@ models:
         - name: country
 
         - name: total_cost
+
+        - name: is_cancelled

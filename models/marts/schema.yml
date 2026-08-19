@@ -10,3 +10,12 @@ models:
         - name: customer_id
 
         - name: country
+
+    - name: dim_product
+
+      columns:
+        - name: product_key
+
+        - name: stock_code
+
+        - name: description

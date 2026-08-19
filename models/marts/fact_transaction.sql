@@ -1,4 +1,7 @@
 SELECT
+    ROW_NUMBER() OVER (
+        ORDER BY t.invoice_id, t.stock_code, t.invoice_date
+    ) AS transaction_key,
     c.customer_key,
     p.product_key,
     d.date_key,

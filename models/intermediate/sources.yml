@@ -1,0 +1,5 @@
+version: 2
+
+sources:
+  - name: stg_online_retail
+    description: "Staged and standardized Online Retail transaction data."

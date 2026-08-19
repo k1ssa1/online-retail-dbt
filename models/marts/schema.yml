@@ -2,52 +2,78 @@ version: 2
 
 models:
 
-    - name: dim_customer
+  - name: dim_customer
+    columns:
+      - name: customer_key
+        tests:
+          - not_null
+          - unique
 
-      columns:
-        - name: customer_key
+      - name: customer_id
 
-        - name: customer_id
+      - name: country
 
-        - name: country
 
-    - name: dim_product
+  - name: dim_product
+    columns:
+      - name: product_key
+        tests:
+          - not_null
+          - unique
 
-      columns:
-        - name: product_key
+      - name: stock_code
 
-        - name: stock_code
+      - name: description
 
-        - name: description
 
-    - name: dim_date
+  - name: dim_date
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+          - unique
 
-      columns:
-        - name: date_key
+      - name: invoice_date
 
-        - name: invoice_date
+      - name: i_year
 
-        - name: i_year
+      - name: i_month
 
-        - name: i_month
+      - name: i_day
 
-        - name: i_day
 
-    - name: fact_transaction
+  - name: fact_transaction
+    columns:
+      - name: transaction_key
+        tests:
+          - not_null
+          - unique
 
-      columns:
-        - name: transaction_key
+      - name: customer_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_key
 
-        - name: customer_key
+      - name: product_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_key
 
-        - name: product_key
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
 
-        - name: date_key
+      - name: invoice_id
 
-        - name: invoice_id
+      - name: quantity
 
-        - name: quantity
+      - name: unit_price
 
-        - name: unit_price
-
-        - name: total_cost
+      - name: total_cost

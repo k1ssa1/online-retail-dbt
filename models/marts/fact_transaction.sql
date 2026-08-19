@@ -7,6 +7,6 @@ SELECT
     t.unit_price,
     t.total_cost
     FROM {{ref('int_online_retail')}} t
-    INNER JOIN dim_customer c ON c.customer_id = t.customer_id
-    INNER JOIN dim_product p ON p.stock_code = t.stock_code
-    INNER JOIN dim_date d ON d.invoice_date = t.invoice_date
+    INNER JOIN {{ ref('dim_customer') }} c ON c.customer_id = t.customer_id
+    INNER JOIN {{ ref('dim_product') }} p ON p.stock_code = t.stock_code
+    INNER JOIN {{ ref('dim_date') }} d ON d.invoice_date = t.invoice_date

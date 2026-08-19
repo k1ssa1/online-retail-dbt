@@ -1,0 +1,22 @@
+version: 2
+
+models:
+
+    - name: int_online_retail
+
+      columns:
+        - name: invoice_id
+
+        - name: stock_code
+
+        - name: description
+
+        - name: quantity
+
+        - name: invoice_date
+
+        - name: unit_price
+
+        - name: customer_id
+
+        - name: country

@@ -10,6 +10,9 @@ models:
           - unique
 
       - name: customer_id
+        tests:
+          - not_null
+          - unique
 
       - name: country
 
@@ -22,6 +25,9 @@ models:
           - unique
 
       - name: stock_code
+        tests:
+          - not_null
+          - unique
 
       - name: description
 
@@ -34,6 +40,9 @@ models:
           - unique
 
       - name: invoice_date
+        tests:
+          - not_null
+          - unique
 
       - name: i_year
 
